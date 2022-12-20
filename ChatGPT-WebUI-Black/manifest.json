@@ -1,0 +1,20 @@
+{
+
+  "manifest_version": 2,
+  "name": "ChatGPT-WebUI-Black",
+  "version": "1.0",
+
+  "description": "Black theme for ChatGPT WebUI",
+
+  "icons": {
+    
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://chat.openai.com/chat"],
+      "js": ["GPTChat_Black.js"]
+    }
+  ]
+
+}
