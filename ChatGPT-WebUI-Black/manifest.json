@@ -12,7 +12,7 @@
 
   "content_scripts": [
     {
-      "matches": ["*://chat.openai.com/chat"],
+      "matches": ["*://chat.openai.com/chat", "*://chat.openai.com/chat/*"],
       "js": ["GPTChat_Black.js"]
     }
   ]
