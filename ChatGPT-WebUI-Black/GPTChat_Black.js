@@ -56,6 +56,6 @@ function blackTheme()
     document.getElementsByClassName("w-full h-48 flex-shrink-0")[0].style.backgroundColor = "black";
 }
   
-setInterval(blackTheme, 1000);
+setInterval(blackTheme, 500);
 document.addEventListener("keydown", blackTheme);
   
