@@ -50,12 +50,23 @@ function blackTheme()
     }
 
     // lower bar
-    document.getElementsByClassName("absolute bottom-0 left-0 w-full dark:border-transparent bg-vert-light-gradient dark:bg-vert-dark-gradient")[0].className = "absolute bottom-0 left-0 w-full";
+    document.getElementsByClassName("absolute bottom-0 left-0 w-full border-t md:border-t-0 dark:border-white/20 md:border-transparent md:dark:border-transparent md:bg-vert-light-gradient bg-white dark:bg-gray-800 md:!bg-transparent dark:md:bg-vert-dark-gradient")[0].className = "absolute bottom-0 left-0 w-full border-t md:border-t-0";
 
     // shrink
     document.getElementsByClassName("w-full h-48 flex-shrink-0")[0].style.backgroundColor = "black";
+
+    for(let c = 0; c < 9; c++)
+    {
+        // conversation history entry inset
+        const inset = document.getElementsByClassName("absolute inset-y-0 right-0 w-8 z-10 bg-gradient-to-l from-gray-900 group-hover:from-[#2A2B32]");
+
+        for(let x = 0; x < inset.length; x++)
+        {
+            inset[x].remove();
+        }
+    }
 }
-  
+
 setInterval(blackTheme, 500);
 document.addEventListener("keydown", blackTheme);
   
