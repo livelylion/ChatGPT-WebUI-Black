@@ -14,6 +14,10 @@
     {
       "matches": ["*://chat.openai.com/chat", "*://chat.openai.com/chat/*"],
       "js": ["GPTChat_Black.js"]
+    },
+	{
+      "matches": ["*://chat.openai.com/auth/login"],
+      "js": ["GPTChat_BlackLogin.js"]
     }
   ]
 
